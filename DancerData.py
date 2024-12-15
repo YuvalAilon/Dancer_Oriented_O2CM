@@ -47,26 +47,17 @@ def getDancerCompetitionList(FirstName, LastName):
 
     return competitions
 
-    #eventData = 
+# yuvalData = getDancerCompetitionList("Yuval" , "Ailon")
+# leaData = getDancerCompetitionList("Lea" , "Luchterhand")
+# benjaminData = getDancerCompetitionList("Benjamin" , "Tadmor")
 
-#print(getDancerCompetitionList("Yuval" , "Ailon"))
-
-yuvalData = getDancerCompetitionList("Yuval" , "Ailon")
-leaData = getDancerCompetitionList("Lea" , "Luchterhand")
-benjaminData = getDancerCompetitionList("Benjamin" , "Tadmor")
-
-print(leaData == yuvalData)
-print(leaData == benjaminData)
-print('10-13-24 - Harvard Beginners 2024' in leaData.keys())
-print('10-13-24 - Harvard Beginners 2024' in benjaminData.keys())
+# print(leaData == yuvalData)                                         # True:  Yuval and Lea have only ever competed together
+# print(leaData == benjaminData)                                      # False: Lea and Benjamin have competed in different competitions
+# print('10-13-24 - Harvard Beginners 2024' in yuvalData.keys())      # True: Yuval has competed in Harvard Beginners 2024
+# print('10-13-24 - Harvard Beginners 2024' in benjaminData.keys())   # False: Benjamin did not compete in Harvard Beginners 2024
 
 
-
-
-
-
-#("https://results.o2cm.com/event3.asp?event=tub24&bclr=#FFFFFF&tclr=#000000")
-
+#Output of getDancerCompetitionList("Yuval" , "Ailon") 
 {'10-13-24 - Harvard Beginners 2024': 
  [('7) Amateur Collegiate Newcomer Am. Foxtrot', 'http://Results.o2cm.com/scoresheet3.asp?event=hbi24&heatid=4032203A'), 
   ('13) Amateur Collegiate Newcomer Intl. Waltz', 'http://Results.o2cm.com/scoresheet3.asp?event=hbi24&heatid=40322018'), 
